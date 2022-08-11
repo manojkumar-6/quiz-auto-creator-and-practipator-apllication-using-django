@@ -1,0 +1,11 @@
+<h1> you can create quiz here</h1>
+<form method="POST" action="">
+    {% csrf_token%} {{n.as_p}}
+    <input type="submit">
+</form>
+<a href="/homes">stop creation</a>
+<hr>{%for i in w%} {{i}}
+<a href="/update/{{g}}/{{i.pk}}">update</a>
+<a href="/dele/{{g}}/{{i.pk}}">delete</a>
+<hr>{% endfor%}
+<hr>

@@ -1,0 +1,14 @@
+<h1> hello {{request.user.username}}</h1>
+<a href="accounts/logout">logout</a>
+<h2>first create ur code for creation of quiz
+    <a href="create">create</a>
+</h2>
+<h2>r u prticipant in any quiz of ur friend the enter the key and participate in it
+    <a href="par">participate</a></h2>
+<h1>the quiz u created are registered with the key u created update data if u want</h1>{%for i in f%}{{i}}
+<a href=" u/{{i.id}} ">update</a>
+<a href="delete/{{i.id}} ">delete</a><br>{% endfor%}
+<br>
+<h1>the leader board for quiz u participated are</h1><br>{% for i in kel%} {{i}}
+<a href="see/{{xq}}">see my result</a>
+<br>{%endfor%}
